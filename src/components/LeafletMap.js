@@ -3,12 +3,13 @@ import {
     MapContainer,
     TileLayer,
     useMap,
-} from 'https://cdn.esm.sh/react-leaflet'
+} from 'react-leaflet';
+import LeafletCanvasMarker from './LeafletCanvasMarker';
 
 const LeafletMap = () => {
     return (
         <div className='map'>
-            <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
+            <MapContainer style={{ height: '100%' }} center={[24.894802, 91.869034]} zoom={13} scrollWheelZoom={false}>
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -18,6 +19,7 @@ const LeafletMap = () => {
                         A pretty CSS3 popup. <br /> Easily customizable.
                     </Popup>
                 </Marker> */}
+                <LeafletCanvasMarker />
             </MapContainer>
         </div>
     );
