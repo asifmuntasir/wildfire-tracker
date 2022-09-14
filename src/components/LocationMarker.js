@@ -1,12 +1,29 @@
 import React from 'react';
-import { Icon } from '@iconify/react'
-import locationIcon from '@iconify/icons-mdi/fire-alert'
+import {
+    Marker,
+    Popup,
+} from 'react-leaflet';
+import L from 'leaflet';
+
+
+const markerIcon = new L.icon({
+    iconUrl: require('../assets/fire.png'),
+    iconSize: [30, 30],
+})
 
 const LocationMarker = ({ lat, lng, onClick }) => {
+
+    const center = {
+        lat,
+        lng
+    }
+
     return (
-        <div className='location_marker' onClick={onClick}>
-            <Icon icon={locationIcon} className='location-icon' />
-        </div>
+        <Marker position={center} icon={markerIcon}>
+            <Popup>
+                Amberkhana, Sylhet.
+            </Popup>
+        </Marker>
     );
 };
 
