@@ -3,13 +3,13 @@
 
 
 # ScreenShots
-<!-- ![](pic.png) -->
-{On going}
+![](wildfire.png)
+<!-- {On going} -->
 
 ## Built With
 - React
-- Bootstrap5(latest)
-- disease.sh API 
+- NASA Open Source API
+- React Leaflet Map 
 
 ## Live Demo
 For the link to the live demo, [Click here]
