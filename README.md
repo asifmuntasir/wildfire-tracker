@@ -29,7 +29,7 @@ git clone https://github.com/asifmuntasir/wildfire-tracker.git using your termin
 
 - GitHub: [Asif_Muntasir](https://github.com/asifmuntasir)
 - LinkedIn: [Asif_Muntasir](https://www.linkedin.com/in/asif-muntasir-shuaib/)
--Website: [Asif_Muntasir](https://asifmuntasir.github.io/)
+- Website: [Asif_Muntasir](https://asifmuntasir.github.io/)
 
 ## 🤝 Contributing
 
