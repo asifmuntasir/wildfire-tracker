@@ -1,10 +1,11 @@
 # Title-Info
-> Wild Fire Tracker app (on going).
+> Wild Fire Tracker app is a react based porject. Here we display warm place in map. For showing warmer place form map, here I've used Leaflet React Map. From map, You can see fire icon for each location which was warm place and if you click the icon, you will be able to see related information for the selected location or fire icon. For all query, I've used NASA Open Source API from ther website. I've mentioned the api link below. 
+NASA Website: https://api.nasa.gov/
+EONET API: https://eonet.gsfc.nasa.gov/api/v2.1/events
 
 
 # ScreenShots
-![](wildfire.png)
-<!-- {On going} -->
+![](wildfire-tracker.gif)
 
 ## Built With
 - React

@@ -1,7 +1,7 @@
 import React from 'react';
 import {
     Marker,
-    Popup,
+    Popup
 } from 'react-leaflet';
 import L from 'leaflet';
 
@@ -11,7 +11,7 @@ const markerIcon = new L.icon({
     iconSize: [30, 30],
 })
 
-const LocationMarker = ({ lat, lng, onClick }) => {
+const LocationMarker = ({ lat, lng, locationID, title }) => {
 
     const center = {
         lat,
@@ -19,9 +19,15 @@ const LocationMarker = ({ lat, lng, onClick }) => {
     }
 
     return (
-        <Marker position={center} icon={markerIcon}>
-            <Popup>
-                Amberkhana, Sylhet.
+        <Marker
+            position={center}
+            icon={markerIcon}>
+            <Popup className='popupContent'>
+                <h2 className='popupHead'>Event Location Info</h2>
+                <ul className='popupText'>
+                    <li>ID: <strong>{locationID}</strong></li>
+                    <li>TITLE: <strong>{title}</strong></li>
+                </ul>
             </Popup>
         </Marker>
     );
